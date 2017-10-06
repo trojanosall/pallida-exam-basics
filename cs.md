@@ -31,9 +31,9 @@ The application is accepted if:
 ## 4. Question time! (~10 mins) [4p]
 
 ###  What is the difference between a function and a method? [2p]
-#### Your answer:
-[add your answer here]
+#### Your answer: Lajos Lorant
+[Method: A method is a group of statements. These statement together perform a task. Funcion: A function allows create a piece of code and call it from other parts of my code. Function is the process-oriented name, but methods are OO name.]
 
 ### What is the constructor? When it is used? [2p]
-#### Your answer:
-[add your answer here]
+#### Your answer: Lajos Lorant
+[They usually initialize the data members of the new object. They have the same name of class.]
