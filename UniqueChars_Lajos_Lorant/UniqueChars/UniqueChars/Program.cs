@@ -10,22 +10,11 @@ namespace UniqueChars
     {
         static void Main(string[] args)
         {
-            // Create a method called `UniqueCharacters` that takes a string as parameter
-            // and returns a list with the unique letters of the given string
-            // Create basic unit tests for it with at least 3 different test cases
-            // Print the characters from that list in the following format:
-            // "n", "g", "r", "m"
-
             string basicWord = "anagram";
 
-            List<char> basicWordarCharacters = UniqueCharacters(basicWord);
+            List<char> UniqueCharactersList = UniqueCharacters(basicWord);
 
-            basicWordarCharacters.ForEach(Console.WriteLine);
-
-            //for (int i = 0; i < basicWordarCharacters.Length; i++)
-            //{
-            //    Console.WriteLine(basicWordarCharacters[i]);
-            //}
+            UniqueCharactersList.ForEach(Console.WriteLine);
 
             Console.ReadKey();
 
@@ -42,12 +31,12 @@ namespace UniqueChars
             {
                 if (basicwordArray[i] != basicwordArray[i++])
                 {
-                   listOfUniqeChararacters.Add(basicwordArray[i]);
+                    listOfUniqeChararacters.Add(basicwordArray[i]);
                 }
             }
 
             return listOfUniqeChararacters;
-            
+
         }
     }
 }
