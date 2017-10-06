@@ -18,21 +18,35 @@ namespace UniqueChars
 
             string basicWord = "anagram";
 
-            Char[] basicWordarCharacters = UniqueCharacters(basicWord);
+            List<char> basicWordarCharacters = UniqueCharacters(basicWord);
 
-            for (int i = 0; i < basicWordarCharacters.Length; i++)
-            {
-                Console.WriteLine(basicWordarCharacters[i]);
-            }
-            
+            basicWordarCharacters.ForEach(Console.WriteLine);
+
+            //for (int i = 0; i < basicWordarCharacters.Length; i++)
+            //{
+            //    Console.WriteLine(basicWordarCharacters[i]);
+            //}
+
             Console.ReadKey();
 
         }
 
-        private static Char[] UniqueCharacters(string basicWord)
+        private static List<char> UniqueCharacters(string basicWord)
         {
             Char[] basicwordArray = basicWord.ToCharArray();
-            return basicwordArray;
+            Array.Sort(basicwordArray);
+
+            List<char> listOfUniqeChararacters = new List<char>();
+
+            for (int i = 0; i < basicwordArray.Length; i++)
+            {
+                if (basicwordArray[i] != basicwordArray[i++])
+                {
+                   listOfUniqeChararacters.Add(basicwordArray[i]);
+                }
+            }
+
+            return listOfUniqeChararacters;
             
         }
     }
