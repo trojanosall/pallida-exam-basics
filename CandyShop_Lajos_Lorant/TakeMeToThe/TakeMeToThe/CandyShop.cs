@@ -31,6 +31,7 @@ namespace TakeMeToThe
         {
             piecesOfSweet = piecesOfSweet + 1;
             sugar = sugar - sugarNeededForSweets;
+
         }
 
         public virtual void Sell()
